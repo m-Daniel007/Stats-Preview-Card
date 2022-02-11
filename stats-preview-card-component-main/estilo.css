@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+    height: auto;
+   
+
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: hsl(244, 38%, 16%);
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1.15rem;
+
+}
+section .content{
+    margin: 2rem;
+    overflow: hidden;
+   
+}
+.content h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.content span{
+    color:hsl(277, 64%, 61%,75%);
+}
+
+.content  #main-paragraph {
+    color: hsla(0, 0%, 100%, 0.50);
+    margin-top: 2rem;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-style: italic;
+}
+
+.numeros{
+    position: absolute;
+    bottom: 1.75rem;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+#one, #two, #three{
+    padding: 1rem;
+    margin-right: 1.25rem;
+    text-align: center;
+    
+   
+}
+
+#one p, #two p, #three p{
+    color:hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+#one small, #two small, #three small{
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    
+}
+
+section .img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+   
+}
+.img img{
+    border-radius: 0 1.15rem 1.15rem 0;
+    height: 100%;
+}
+
+section .img::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(277, 64%, 41%, 0.5);
+    border-radius: 0 1.15rem 1.15rem 0;
+}
+
+@media screen and (min-width:500px) and (max-width: 768px){
+
+    body{
+        display: flex;
+        position: relative;
+        height: auto;
+    }
+    .container{
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -11%);
+        display: flex;
+        flex-direction: column-reverse;
+        min-width: 75%;
+        height: auto;
+        margin-top: 5rem;
+        border-radius: 1rem 1rem;
+        padding: 0;
+         
+    }
+
+    .img img{
+       width: 100%;
+       height: 28vh;
+       border-radius: 1rem 1rem 0 0 ;
+      
+      
+    }
+    section .img::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 99%;
+        width: 100%;
+        background-color: hsl(277, 64%, 41%, 0.4);
+        border-radius: 1.15rem 1.15rem 0 0;
+    }
+    .container  .content{
+         margin: 0;
+         padding: 0;
+         font-size: 0.2rem;
+         height: 500px;
+         
+        
+    }
+    
+     .content h1 {
+      font-size: 2.16rem;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 1px;
+      margin: 1.25rem;
+     
+     }
+     #main-paragraph{
+          text-align: center;
+          margin: 0.75rem;
+          letter-spacing: 0.5px;
+          line-height: 3px;
+ 
+     }
+
+     section .content .numeros{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+        padding: 0;
+        font-size: 0.2rem;
+       
+    }
+} 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
